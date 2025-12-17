@@ -45,7 +45,7 @@ The screenshot below shows TCP traffic filtered using the `tcp` display
 filter, highlighting multiple TCP packets involved in connection setup
 and communication.
 
-![TCP Packet List](../screenshots/tcp_packet_list.png)
+![TCP Packet List](../screenshots/tcp_filter.png)
 
 ---
 
