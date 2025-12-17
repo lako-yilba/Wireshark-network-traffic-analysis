@@ -55,6 +55,14 @@ attackers may misuse ICMP for network scanning and reconnaissance.
 Monitoring ICMP traffic helps security analysts detect suspicious
 probing or unauthorized network activity.
 
+## Additional ICMP Filters (Reference)
+The following ICMP display filters were explored during analysis for
+better traffic isolation and understanding:
+
+- `icmp` – Show all ICMP traffic
+- `icmp.type == 8` – Show ICMP Echo Requests
+- `icmp.type == 0` – Show ICMP Echo Replies
+- `icmp.code == 3` – Destination unreachable messages
 
 
 ## Conclusion
