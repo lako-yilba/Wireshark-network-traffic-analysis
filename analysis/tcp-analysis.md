@@ -75,6 +75,11 @@ is successfully established. This handshake ACK contains no data.
 
 ![TCP ACK](../screenshots/tcp_ack.png)
 
+## TCP Connection Termination 
+TCP connections are closed using FIN packets. A FIN packet indicates that
+one side has finished sending data and wishes to close the connection.
+
+
 ---
 
 ## Observations
@@ -101,7 +106,7 @@ Attackers may abuse TCP behavior through techniques such as SYN scanning,
 connection flooding, or session hijacking. Monitoring TCP flags and
 handshake behavior helps security analysts identify abnormal or malicious
 network activity.
-
+ 
 ---
 
 ## Conclusion
