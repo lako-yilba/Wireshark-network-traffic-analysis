@@ -22,11 +22,11 @@ requests, responses, headers, and status codes.
 | Filter | Description |
 |------|------------|
 | `http` | Show all HTTP traffic |
-| `tcp.port == 80` | HTTP traffic by default port |
+| `tcp.port == 80` | HTTP traffic on the default HTTP port |
 | `http.request.method == "GET"` | Show all GET requests |
 | `http.request.uri` | View requested resources |
 | `http.set_cookie` | Show cookies in HTTP responses |
-| `ip.addr == 192.168.1.10` | HTTP traffic to/from specific host |
+| `ip.addr == 192.168.1.10` | HTTP traffic to/from a specific host |
 
 ---
 
@@ -40,15 +40,18 @@ filter.
 
 ## HTTP Request (GET)
 HTTP GET requests are sent by the client to request resources from a web
-server. The screenshot below shows a GET request with request headers.
+server. The screenshot below shows a GET request along with request
+headers.
 
 ![HTTP GET Request](../screenshots/http_get_request.png)
 
 ---
 
 ## HTTP Response
-HTTP responses are sent by the server to reply to client requests. To filter the respomses only you can use 'http.response' .The
-screenshot below shows a successful HTTP response with status code 200 OK.
+HTTP responses are sent by the server to reply to client requests. The
+`http.response` display filter was used to isolate server responses. The
+screenshot below shows a successful HTTP response with status code
+200 OK.
 
 ![HTTP Response](../screenshots/http_response.png)
 
@@ -56,7 +59,8 @@ screenshot below shows a successful HTTP response with status code 200 OK.
 
 ## HTTP Headers
 HTTP headers contain metadata such as host information, browser details,
-and content type.
+and content type. These headers can reveal sensitive information when
+transmitted over unencrypted HTTP.
 
 ![HTTP Headers](../screenshots/http_headers.png)
 
